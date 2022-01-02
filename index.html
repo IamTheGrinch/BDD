@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>TD EAN API</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Projet API</h1>
+                <hr>
+                <div class="input-group">
+                    <input type="text" id='code_barre' class="form-control" placeholder="Veuillez entrer un code-barres" aria-label="Recipient's username with one addon">
+                    <button onclick="recherche()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                     </button>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+ <div class="card" style="width: 40rem;">
+    <div class="card-body">
+      <h5 class="card-title">Caractéristiques du produit</h5>
+        <img id="product_img" src=""></img> <br>
+        <p id="product_id"></p>
+        <p id="product_name_fr"></p>
+        <p id="brands_tags"></p>
+        <p id="generic_name_fr"></p>
+        <p id="status"></p>
+        <img id="product_img" src=""></img> <br>
+        <img id="product_nutriscore" src="" width="10%"></img>
+        
+        <div id="effacer">
+            <button type="effacer" class="btn btn-primary">Supprimer</button>
+        </div>
+        
+     </div>
+
+   </div>
+</div>
+    <script src="jv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
